@@ -121,6 +121,12 @@ class X_NN:
         return k_best_neighbors[0]
 
     def __nearest_neighbor_classifier(self, ponto):
+        '''
+            * Recebe um ponto de teste
+            * Retorna a classe estimada do ponto de teste
+
+            * Tendo os k vizinhos mais próximos, verifica qual a classe predominante entre esses vizinhos e atribui essa classe ao ponto de teste. 
+        '''
         k_best_neighbors = self.__find_nearest_neighbor(ponto=ponto)
         classes = {}
         for neighbor in k_best_neighbors:

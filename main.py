@@ -37,13 +37,6 @@ def ler_arquivo(file):
     return points, classes
 
 
-'''def euclidian_distance(A, B):
-    assert len(A)==len(B), "Tentando calcular distância de pontos de dimensões diferentes"
-    soma = sum((A[i]-B[i])**2 for i in range(len(A)))
-    dist = np.sqrt(soma)
-    return dist   '''
-
-
 def eliminar_duplicados(P):
     P_aux = []
     pontos_adicionados = []
