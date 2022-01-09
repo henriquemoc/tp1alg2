@@ -77,6 +77,7 @@ if __name__ == "__main__":
     revocacao = xNN.revocacao()
     acuracia = xNN.acuracia()
     
+    #print(xNN.resultado)
     print(f"Precisao por classe: {precisao}")
     print(f"Precisao media: {str(sum(precisao)/len(precisao))}")
     print(f"Revocacao por classe: {revocacao}")
